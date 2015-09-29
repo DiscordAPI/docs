@@ -1,22 +1,16 @@
-.. Discord API documentation master file, created by
-   sphinx-quickstart on Tue Sep 29 14:49:18 2015.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+Discord API
+===========
 
-Welcome to Discord API's documentation!
-=======================================
-
-Contents:
+Description
 
 .. toctree::
+   :caption: Documentation
    :maxdepth: 2
-
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
-
+   
+   reference/auth/index
+   reference/channels/index
+   reference/guilds/index
+   reference/users/index
+   reference/status/index
+   reference/voice/index
+   reference/websockets/index
