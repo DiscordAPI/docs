@@ -1,0 +1,14 @@
+# Sphinx #
+##########
+_build
+
+# OS generated files #
+######################
+.DS_Store?
+ehthumbs.db
+Icon?
+Thumbs.db
+
+# Editor backup files #
+#######################
+*~
