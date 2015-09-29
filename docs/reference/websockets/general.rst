@@ -9,7 +9,7 @@ Request
 
 .. code-block:: http
 
-    POST https://discordapp.com/api/gateway
+    GET https://discordapp.com/api/gateway
 	
 Parameters
 ^^^^^^^^^^
