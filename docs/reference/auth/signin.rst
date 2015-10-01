@@ -14,14 +14,25 @@ Request
 Parameters
 ^^^^^^^^^^
 
+
+.. code-block:: json
+
+    {
+        "email":"client email",
+        "password":"client password"
+    }
+
+
 Response
 ~~~~~~~~
 
 .. code-block:: json
 
     {
+        "token": "token here"
     }
   
+It's important you keep track of this token, as you will need this later for most of the HTTP requests, especially when you want to send or delete messages.
     	
 Logout
 ------
@@ -35,6 +46,12 @@ Request
 
 Parameters
 ^^^^^^^^^^
+
+.. code-block:: json
+
+    {
+         "token": "token from login"
+    }
 
 Response
 ~~~~~~~~
