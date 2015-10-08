@@ -95,6 +95,8 @@ See `Message Format`_.
 Delete Message
 --------------
 
+Deletes the provided message.
+
 Request
 ~~~~~~~
 
