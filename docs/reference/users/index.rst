@@ -1,5 +1,5 @@
-|stub| Users
-============
+Users
+=====
 
 Description
 

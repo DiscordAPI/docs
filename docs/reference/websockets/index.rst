@@ -1,5 +1,5 @@
-|stub| WebSockets
-=================
+WebSockets
+==========
 
 Description
 

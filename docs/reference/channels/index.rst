@@ -1,5 +1,5 @@
-|stub| Channels
-===============
+Channels
+========
 
 Description
 

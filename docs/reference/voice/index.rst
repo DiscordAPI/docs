@@ -1,5 +1,5 @@
-|stub| Voice
-============
+Voice
+=====
 
 Description
 

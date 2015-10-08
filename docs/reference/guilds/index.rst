@@ -1,5 +1,5 @@
-|stub| Guilds
-=============
+Guilds
+======
 
 Description
 

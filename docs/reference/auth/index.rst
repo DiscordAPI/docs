@@ -1,5 +1,5 @@
-|stub| Authentication
-=====================
+Authentication
+==============
 
 Description
 
