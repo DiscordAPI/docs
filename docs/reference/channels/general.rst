@@ -69,23 +69,14 @@ Response
 Broadcast Typing
 ----------------
 
+Broadcasts to all members of a channel that you are currently typing. Each request will maintain the typing state for the next 5 seconds.
+
 Request
 ~~~~~~~
 
 .. code-block:: http
 
     POST https://discordapp.com/api/channels/:id/typing
-
-Parameters
-^^^^^^^^^^
-
-Response
-~~~~~~~~
-
-.. code-block:: json
-
-    {
-    }
 
 
 Events
