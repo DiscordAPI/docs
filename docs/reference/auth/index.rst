@@ -7,5 +7,4 @@ Using Discord's Authentication API
    :maxdepth: 2
    :glob:
 
-   register
    signin
