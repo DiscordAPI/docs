@@ -55,7 +55,7 @@ READY Event
                             "mute": false,
                             "deaf": false,
                             "channel_id": "11122233344455566"
-                        }                
+                        }
                     ],
                     "roles": [
                         {

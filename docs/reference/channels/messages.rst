@@ -12,12 +12,12 @@ Request
 .. code-block:: http
 
     GET https://discordapp.com/api/channels/:channel_id/messages?before=111222333444555666&limit=50
-    
+
 Parameters
 ^^^^^^^^^^
 
     - **before** (Optional): Gets messages before a given message ID.
-    - **limit** (Optional?): Max number of messages to return.
+    - **limit** (Optional): Max number of messages to return. Default: 50
 
 Response
 ~~~~~~~~
@@ -37,7 +37,7 @@ Request
 .. code-block:: http
 
     POST https://discordapp.com/api/channels/:channel_id/messages
-	
+
 .. code-block:: json
 
     {
@@ -46,22 +46,22 @@ Request
         "nonce": "1453949470692605952",
         "tts": false
     }
-	
+
 Parameters
 ^^^^^^^^^^
 
-    - **content**: The text of the message. Supports basic markdown formatting. 
+    - **content**: The text of the message. Supports basic markdown formatting.
     - **mentions** (Optional): An array of the ids of all users this message is mentioning.
     - **nonce** (Optional): A unique ID assigned to this message. Has no purpose other than being sent back to you in the MESSAGE_CREATE event.
     - **tts** (Optional): Should this message be broadcast using Text-To-Speech? (default: false)
-    
+
 Response
 ~~~~~~~~
 
 See `Message Format`_.
-  
-  
-    	
+
+
+
 Edit Message
 ------------
 
@@ -71,7 +71,7 @@ Request
 .. code-block:: http
 
     PATCH https://discordapp.com/api/channels/:channel_id/messages/:id
-    
+
 .. code-block:: json
 
     {
@@ -82,7 +82,7 @@ Request
 Parameters
 ^^^^^^^^^^
 
-    - **content**: The text of the message. Supports basic markdown formatting. 
+    - **content**: The text of the message. Supports basic markdown formatting.
     - **mentions** (Optional): An array of the ids of all users this message is mentioning.
 
 Response
@@ -103,8 +103,6 @@ Request
 .. code-block:: http
 
     DELETE https://discordapp.com/api/channels/:channel_id/messages/:id
-
-
 
 Acknowledge Message
 -------------------
@@ -137,7 +135,7 @@ Note: d is in `Message Format`_.
         "op": 0,
         "d": {...}
     }
-    
+
 MESSAGE_UPDATE
 ~~~~~~~~~~~~~~
 
@@ -169,7 +167,7 @@ A message was deleted in one of the channels you have read access to.
             "channel_id": "111222333444555666"
         }
     }
-    
+
 MESSAGE_ACK
 ~~~~~~~~~~~
 
@@ -186,9 +184,9 @@ You acknowledged a message on another machine.
             "channel_id": "81385020756865024"
         }
     }
-        
-    
-    
+
+
+
 Message Format
 --------------
 

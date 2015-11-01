@@ -1,6 +1,6 @@
 |stub| Permissions
 ==================
-	
+
 Create/Edit Permission
 ----------------------
 

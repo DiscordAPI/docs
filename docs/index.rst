@@ -1,12 +1,12 @@
 Discord API
 ===========
 
-Description
+Discord API Documentation
 
 .. toctree::
    :caption: Documentation
    :maxdepth: 2
-   
+
    reference/auth/index
    reference/channels/index
    reference/guilds/index

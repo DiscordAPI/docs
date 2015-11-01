@@ -1,6 +1,6 @@
 |stub| Members
 ==============
-    	
+
 Edit Member
 -----------
 

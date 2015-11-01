@@ -10,7 +10,7 @@ Request
 .. code-block:: http
 
     PATCH https://discordapp.com/api/users/@me
-	
+
 Parameters
 ^^^^^^^^^^
 

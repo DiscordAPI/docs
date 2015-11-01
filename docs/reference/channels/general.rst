@@ -10,19 +10,26 @@ Request
 .. code-block:: http
 
     POST https://discordapp.com/api/guilds/:guild_id/channels
-	
-Parameters
-^^^^^^^^^^
-
-Response
-~~~~~~~~
 
 .. code-block:: json
 
     {
+        "name":"channel name",
+        "type":"text"
     }
-  
-    	
+
+Parameters
+^^^^^^^^^^
+
+    - **name** (Required): The name of the channel to create. Name must be 2-100 characters long
+    - **type** (Required): Should be `text` for text channels, or `voice` for voice channels
+
+Response
+~~~~~~~~
+
+See `Channel Format`_.
+
+
 Edit Channel
 ------------
 
@@ -33,16 +40,21 @@ Request
 
     PATCH https://discordapp.com/api/channels/:id
 
+.. code-block:: json
+
+    {
+        "name": "channel name"
+    }
+
 Parameters
 ^^^^^^^^^^
+
+    - **name** (Required): The new name of the channel. Name must be 2-100 characters long.
 
 Response
 ~~~~~~~~
 
-.. code-block:: json
-
-    {
-    }
+See `Channel Format`_.
 
 
 Delete Channel
@@ -55,17 +67,11 @@ Request
 
     DELETE https://discordapp.com/api/channels/:id
 
-Parameters
-^^^^^^^^^^
-
 Response
 ~~~~~~~~
 
-.. code-block:: json
+See `Channel Format`_.
 
-    {
-    }
-    
 Broadcast Typing
 ----------------
 
@@ -81,3 +87,22 @@ Request
 
 Events
 ------
+
+
+
+Channel Format
+--------------
+
+.. code-block:: json
+
+    {
+        "guild_id": "111222333444555666",
+        "name": "some name",
+        "permission_overwrites": [],
+        "topic": null,
+        "position": 2,
+        "last_message_id": null,
+        "type": "text",
+        "id": "111222333444555666",
+        "is_private": false
+    }
