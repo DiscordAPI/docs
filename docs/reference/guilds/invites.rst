@@ -1,5 +1,5 @@
 Invites
-==============
+=======
 
 Get and Accept Invite
 ----------
