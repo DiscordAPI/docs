@@ -5,7 +5,7 @@ Get Endpoint
 ------------
 
 Returns the endpoint for your current user's websocket connection.
-The gateway returned should not be cached as the returned endpoint is based on your user id and the amount of current gateways. 
+The gateway returned should not be cached as the returned endpoint is based on your user id and the amount of current gateways.
 Connecting to the wrong gateway will result in a redirect event.
 
 Request
@@ -23,7 +23,7 @@ Response
     {
     	"url":"wss://gateway-cerberus.discord.gg"
     }
-    
+
     The URL shown here is a common example of one. It's best to always use the URL you receive from your GET request instead of statically connecting to the URL here.
 
 Connect
@@ -44,7 +44,7 @@ Message (via WebSocket)
 		}
 	}
 
-	
+
 Keepalive
 ---------
 

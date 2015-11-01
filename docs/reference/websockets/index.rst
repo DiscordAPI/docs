@@ -1,10 +1,10 @@
 WebSockets
 ==========
 
-Description
+Using Discord WebSockets
 
 .. toctree::
    :maxdepth: 2
-   
+
    general
    ready

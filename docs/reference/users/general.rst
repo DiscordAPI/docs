@@ -10,7 +10,7 @@ Request
 .. code-block:: http
 
     POST https://discordapp.com/api/users/:id/channels
-	
+
 Parameters
 ^^^^^^^^^^
 
@@ -21,8 +21,8 @@ Response
 
     {
     }
-  
-    	
+
+
 Get Avatar
 ----------
 

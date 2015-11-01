@@ -1,7 +1,7 @@
-|stub| Invites
+Invites
 ==============
-	    
-Get Invite
+
+Get and Accept Invite
 ----------
 
 Request
@@ -11,18 +11,27 @@ Request
 
     POST https://discordapp.com/api/invite/:id_or_xkcd
 
-Parameters
-^^^^^^^^^^
-
 Response
 ~~~~~~~~
 
 .. code-block:: json
 
     {
+        "code": "0cFbBdvaQwODZPcF",
+        "guild": {
+            "id": "110451980584914944",
+            "name": "Guild Name"
+        },
+        "xkcdpass": null,
+        "channel": {
+            "type": "text",
+            "id": "110453227215937536",
+            "name": "Channel Name"
+        }
     }
-    
-    
+
+
+
 Create Invite
 -------------
 
@@ -31,10 +40,18 @@ Request
 
 .. code-block:: http
 
-    PUT https://discordapp.com/api/channels/:id/invites
+    POST https://discordapp.com/api/channels/:id/invites
+
+.. code-block:: json
+
+    {
+        "validate": "invite id"
+    }
 
 Parameters
 ^^^^^^^^^^
+
+    - **validate** (Optional): Validate a cached invite ID
 
 Response
 ~~~~~~~~
@@ -42,31 +59,33 @@ Response
 .. code-block:: json
 
     {
+        "max_age": 86400,
+        "code": "0cFbBdvaQwLBiyyI",
+        "guild": {
+            "id": "110451980584914944",
+            "name": "Guild Name"
+        },
+        "revoked": false,
+        "created_at": "2015-11-01T19:23:29.137000+00:00",
+        "temporary": false,
+        "uses": 0,
+        "max_uses": 0,
+        "inviter": {
+            "username": "Person",
+            "discriminator": "1849",
+            "id": "112462135683509820",
+            "avatar": null
+        },
+        "xkcdpass": null,
+        "channel": {
+            "type": "text",
+            "id": "110453227215937536",
+            "name": "Channel Name"
+        }
     }
 
-    
-Accept Invite
--------------
 
-Request
-~~~~~~~
 
-.. code-block:: http
-
-    POSTs https://discordapp.com/api/invite/:id
-
-Parameters
-^^^^^^^^^^
-
-Response
-~~~~~~~~
-
-.. code-block:: json
-
-    {
-    }
-        
-    
 Delete Invite
 -------------
 
@@ -77,13 +96,21 @@ Request
 
     DELETE https://discordapp.com/api/invite/:id
 
-Parameters
-^^^^^^^^^^
-
 Response
 ~~~~~~~~
 
 .. code-block:: json
 
     {
+        "code": "0cFbBdvaQwODZPcF",
+        "guild": {
+            "id": "110451980584914944",
+            "name": "Guild Name"
+        },
+        "xkcdpass": null,
+        "channel": {
+            "type": "text",
+            "id": "110453227215937536",
+            "name": "Channel Name"
+        }
     }

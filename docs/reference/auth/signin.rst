@@ -10,10 +10,6 @@ Request
 .. code-block:: http
 
     POST https://discordapp.com/api/auth/login
-	
-Parameters
-^^^^^^^^^^
-
 
 .. code-block:: json
 
@@ -22,6 +18,11 @@ Parameters
         "password":"client password"
     }
 
+Parameters
+^^^^^^^^^^
+
+    - **email** (Required): The email to login with.
+    - **password** (Required): The password to login with.
 
 Response
 ~~~~~~~~
@@ -31,9 +32,11 @@ Response
     {
         "token": "token here"
     }
-  
-It's important you keep track of this token, as you will need this later for most of the HTTP requests, especially when you want to send or delete messages.
-    	
+
+It's important you keep track of this token, as most HTTP API requests will require an `Authorization` header containing this token.
+
+
+
 Logout
 ------
 
@@ -44,14 +47,16 @@ Request
 
     POST https://discordapp.com/api/auth/logout
 
-Parameters
-^^^^^^^^^^
-
 .. code-block:: json
 
     {
          "token": "token from login"
     }
+
+Parameters
+^^^^^^^^^^
+
+    - **token** (Required): The token you logged in with.
 
 Response
 ~~~~~~~~
