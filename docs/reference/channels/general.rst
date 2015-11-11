@@ -30,6 +30,7 @@ Response
 See `Channel Format`_.
 
 
+
 Edit Channel
 ------------
 
@@ -57,6 +58,7 @@ Response
 See `Channel Format`_.
 
 
+
 Delete Channel
 --------------
 
@@ -72,6 +74,8 @@ Response
 
 See `Channel Format`_.
 
+
+
 Broadcast Typing
 ----------------
 
@@ -83,6 +87,7 @@ Request
 .. code-block:: http
 
     POST https://discordapp.com/api/channels/:id/typing
+
 
 
 Events

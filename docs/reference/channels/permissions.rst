@@ -23,7 +23,7 @@ Response
     }
 
 
-Delete Channel
+Delete Permission
 --------------
 
 Request

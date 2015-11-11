@@ -11,12 +11,13 @@ Request
 
 .. code-block:: http
 
-    GET https://discordapp.com/api/channels/:channel_id/messages?before=111222333444555666&limit=50
+    GET https://discordapp.com/api/channels/:channel_id/messages?before=111222333444555666&after=111222333444555666&limit=50
 
 Parameters
 ^^^^^^^^^^
 
     - **before** (Optional): Gets messages before a given message ID.
+    - **after** (Optional): Gets messages after a given message ID.
     - **limit** (Optional): Max number of messages to return. Default: 50
 
 Response

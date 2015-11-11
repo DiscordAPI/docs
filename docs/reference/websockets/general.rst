@@ -1,4 +1,4 @@
-|stub| General
+General
 ==============
 
 Get Endpoint
@@ -26,6 +26,8 @@ Response
 
     The URL shown here is a common example of one. It's best to always use the URL you receive from your GET request instead of statically connecting to the URL here.
 
+
+
 Connect
 -------
 
@@ -43,6 +45,7 @@ Message (via WebSocket)
 			"v": 3
 		}
 	}
+
 
 
 Keepalive
@@ -64,9 +67,9 @@ Message
 .. code-block:: json
 
 	{
-		"op":3,
-		"d":{
-			"idle_since":null,
-			"game_id":null
+		"op": 3,
+		"d": {
+			"idle_since": null,
+			"game_id": null
 		}
 	}

@@ -1,4 +1,4 @@
-|stub| Signing In
+Signing In
 =================
 
 Login

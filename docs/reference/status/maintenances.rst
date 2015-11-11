@@ -1,7 +1,7 @@
 |stub| Maintenances
 ===================
 
-???
+Active Maintenances?
 ---
 
 Request
@@ -17,10 +17,17 @@ Response
 .. code-block:: json
 
     {
+        "page": {
+            "id": "srhpyqt94yxb",
+            "name": "Discord",
+            "url": "http://status.discordapp.com",
+            "updated_at": "2015-10-10T10:10:10.100-08:00"
+        },
+        "scheduled_maintenances": []
     }
 
 
-???
+Upcoming Maintenances?
 ---
 
 Request
@@ -36,4 +43,11 @@ Response
 .. code-block:: json
 
     {
+        "page": {
+            "id": "srhpyqt94yxb",
+            "name": "Discord",
+            "url": "http://status.discordapp.com",
+            "updated_at": "2015-10-10T10:10:10.100-08:00"
+        },
+        "scheduled_maintenances": []
     }
