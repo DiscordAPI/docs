@@ -45,7 +45,7 @@ Request
 
 .. code-block:: http
 
-    PATCH https://discordapp.com/api/guilds/:id/members
+    PATCH https://discordapp.com/api/guilds/:guild_id/members/:user_id
 
 .. code-block:: json
 
@@ -68,7 +68,7 @@ Request
 
 .. code-block:: http
 
-    DELETE https://discordapp.com/api/guilds/:id/members
+    DELETE https://discordapp.com/api/guilds/:guild_id/members/:user_id
 
 
 
