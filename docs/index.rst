@@ -10,6 +10,7 @@ Discord API Documentation
    reference/auth/index
    reference/channels/index
    reference/guilds/index
+   reference/invites/index
    reference/users/index
    reference/status/index
    reference/voice/index

@@ -40,6 +40,11 @@ Request
 Parameters
 ^^^^^^^^^^
 
+    - **color** (Required): The color the role should have (as a decimal, **not hex**)
+    - **hoist** (Required): Whether to display the role's users separately
+    - **name** (Required): The role's name (overwrites existing)
+    - **permissions** (Required): The overall permissions number of the role (overwrites existing). See `Permissions Number <../channels/permissions.html#permissions-number>`_.
+
 Response
 ~~~~~~~~
 
@@ -49,11 +54,6 @@ See `Role Format`_.
 
 Reorder Roles
 ---------
-
-    - **color** (Required): The color the role should have (as a decimal, **not hex**)
-    - **hoist** (Required): Whether to display the role's users separately
-    - **name** (Required): The role's name (overwrites existing)
-    - **permissions** (Required): The overall permissions number of the role (overwrites existing). See `Permissions Number <../channels/permissions.html#permissions-number>`_.
 
 Request
 ~~~~~~~

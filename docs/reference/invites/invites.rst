@@ -1,7 +1,24 @@
 Invites
 =======
 
-Get and Accept Invite
+Get Invite
+----------
+
+Request
+~~~~~~~
+
+.. code-block:: http
+
+    GET https://discordapp.com/api/invite/:id_or_xkcd
+
+Response
+~~~~~~~~
+
+See `Basic Invite Format`_.
+
+
+
+Accept Invite
 ----------
 
 Request
@@ -14,21 +31,7 @@ Request
 Response
 ~~~~~~~~
 
-.. code-block:: json
-
-    {
-        "code": "0cFbBdvaQwODZPcF",
-        "guild": {
-            "id": "110451980584914944",
-            "name": "Guild Name"
-        },
-        "xkcdpass": null,
-        "channel": {
-            "type": "text",
-            "id": "110453227215937536",
-            "name": "Channel Name"
-        }
-    }
+See `Basic Invite Format`_.
 
 
 
@@ -98,6 +101,13 @@ Request
 
 Response
 ~~~~~~~~
+
+See `Basic Invite Format`_.
+
+
+
+Basic Invite Format
+-------------------
 
 .. code-block:: json
 

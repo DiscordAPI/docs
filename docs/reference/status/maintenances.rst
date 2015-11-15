@@ -2,7 +2,7 @@
 ===================
 
 Active Maintenances?
----
+--------------------
 
 Request
 ~~~~~~~
@@ -28,7 +28,7 @@ Response
 
 
 Upcoming Maintenances?
----
+----------------------
 
 Request
 ~~~~~~~

@@ -22,7 +22,7 @@ Parameters
 ^^^^^^^^^^
 
     - **name** (Required): The name of the channel to create. Name must be 2-100 characters long
-    - **type** (Required): Should be `text` for text channels, or `voice` for voice channels
+    - **type** (Required): Should be "text" for text channels, or "voice" for voice channels
 
 Response
 ~~~~~~~~
@@ -44,13 +44,17 @@ Request
 .. code-block:: json
 
     {
-        "name": "channel name"
+        "name": "channel name",
+        "position": 0,
+        "topic": "a topic"
     }
 
 Parameters
 ^^^^^^^^^^
 
     - **name** (Required): The new name of the channel. Name must be 2-100 characters long.
+    - **position** (Required): The position of the channel to edit.
+    - **topic** (Required): The new topic of the channel.
 
 Response
 ~~~~~~~~

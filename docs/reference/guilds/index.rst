@@ -7,7 +7,6 @@ Using Discord's Guilds API
    :maxdepth: 2
 
    general
-   bans
-   invites
    members
+   bans
    roles

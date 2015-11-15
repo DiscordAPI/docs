@@ -14,8 +14,8 @@ Request
 .. code-block:: json
 
     {
-        "email":"client email",
-        "password":"client password"
+        "email": "client email",
+        "password": "client password"
     }
 
 Parameters
