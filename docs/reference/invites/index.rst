@@ -1,5 +1,5 @@
 Invites
-======
+=======
 
 Using Discord's Invite API
 

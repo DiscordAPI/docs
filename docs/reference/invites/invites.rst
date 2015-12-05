@@ -19,7 +19,7 @@ See `Basic Invite Format`_.
 
 
 Accept Invite
-----------
+-------------
 
 Request
 ~~~~~~~

@@ -53,7 +53,7 @@ See `Role Format`_.
 
 
 Reorder Roles
----------
+-------------
 
 Request
 ~~~~~~~
