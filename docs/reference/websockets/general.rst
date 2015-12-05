@@ -42,18 +42,7 @@ Message (via WebSocket)
 		"op": 2,
 		"d": {
 			"token": "aaaaaaaabbbbbbbbccccccccddddddddeeeeeeeeffffffffgggggggghh",
-			"v": 3
-		}
-	}
-
-With optional fields
-
-.. code-block:: json
-
-	{
-		"op": 2,
-		"d":{
-			"token": "aaaaaaaabbbbbbbbccccccccddddddddeeeeeeeeffffffffgggggggghh",
+			"v": 3,
 			"properties": {
 				"$os": "Windows",
 				"$browser": "Chrome",
@@ -61,11 +50,12 @@ With optional fields
 				"$referrer":" https://discordapp.com/@me",
 				"$referring_domain":"discordapp.com"
 			},
-			"v":3,
 			"large_threshold":100,
 			"compress":true
 		}
 	}
+
+Note: Only d.token and d.v are required
 
 
 Keepalive
