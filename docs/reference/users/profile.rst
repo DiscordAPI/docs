@@ -31,13 +31,16 @@ Parameters
     - **username** (Required): The user's userame (overwrites existing)
 
 Changing the avatar image
-~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: json
 
     {
         "avatar": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAMCAgICAgMCAgIDAwMDBAYEBAQ...",
-        ...
+        "email": "email@example.com",
+        "new_password": "passwerd",
+        "password": "password",
+        "username": "Something"
     }
 
 Response
