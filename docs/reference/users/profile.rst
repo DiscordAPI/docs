@@ -24,11 +24,21 @@ Request
 Parameters
 ^^^^^^^^^^
 
-    - **avatar** (Required): The user's avatar ID (overwrites existing) (null to remove)
+    - **avatar** (Required): The user's avatar ID or null to remove or a base64 encoded image
     - **email** (Required): The user's email (overwrites existing)
     - **password** (Required): The user's current password
     - **new_password** (Optional): The user's desired password
     - **username** (Required): The user's userame (overwrites existing)
+
+Changing the avatar image
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: json
+
+    {
+        "avatar": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAMCAgICAgMCAgIDAwMDBAYEBAQ...",
+        ...
+    }
 
 Response
 ~~~~~~~~
