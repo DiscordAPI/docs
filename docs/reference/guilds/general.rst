@@ -74,6 +74,23 @@ See `Guild Format`_.
 
 
 
+Get Guilds
+----------
+
+Request
+~~~~~~~
+
+.. code-block:: http
+
+    GET https://discordapp.com/api/users/@me/guilds
+
+Response
+~~~~~~~~
+
+An array of guild objects. See `Guild Format`_.
+
+
+
 Get Guild Channels
 ------------------
 
