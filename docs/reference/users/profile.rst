@@ -16,7 +16,7 @@ Request
     {
         "avatar": "a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1",
         "email": "email@example.com",
-        "new_password": "passwerd",
+        "new_password": "newpassword",
         "password": "password",
         "username": "Something"
     }
@@ -53,7 +53,7 @@ Example: changing the avatar image
     {
         "avatar": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAMCAgICAgMCAgIDAwMDBAYEBAQ...",
         "email": "email@example.com",
-        "new_password": "passwerd",
+        "new_password": "newpassword",
         "password": "password",
         "username": "Something"
     }
