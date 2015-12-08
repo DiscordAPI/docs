@@ -1,7 +1,7 @@
 Discord API
 ===========
 
-Discord API Documentation
+Unofficial Discord API Documentation
 
 .. toctree::
    :caption: Documentation
