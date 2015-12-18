@@ -24,7 +24,7 @@ Response
     	"url":"wss://gateway-cerberus.discord.gg"
     }
 
-    The URL shown here is a common example of one. It's best to always use the URL you receive from your GET request instead of statically connecting to the URL here.
+The URL shown here is a common example of one. It's best to always use the URL you receive from your GET request instead of statically connecting to the URL here.
 
 
 
