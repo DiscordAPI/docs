@@ -160,7 +160,7 @@ A message was deleted in one of the channels you have read access to.
 .. code-block:: json
 
     {
-        "t": "MESSAGE_UPDATE",
+        "t": "MESSAGE_DELETE",
         "s": 1,
         "op": 0,
         "d": {
