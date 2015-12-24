@@ -61,7 +61,7 @@ Note: Only d.token and d.v are required
 Keepalive
 ---------
 
-Keepalives must be sent every "heartbeat_interval" milliseconds, as specified by the READY and RESUMED events, or the connection will be closed. The "d" parameter is the current date/time minus epoch, in Unix time.
+Keepalives must be sent every "heartbeat_interval" milliseconds, as specified by the READY and RESUMED events, or the connection will be closed. The "d" parameter is the current number of milliseconds since 1 January 1970 00:00:00 UTC.
 
 Message (via WebSocket)
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -69,7 +69,7 @@ Message (via WebSocket)
 .. code-block:: json
 	{
 		"op": 1,
-		"d": "-2147483648"
+		"d": "1450996513618"
 	}
 
 Update Status
