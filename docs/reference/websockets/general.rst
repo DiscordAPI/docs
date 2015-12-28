@@ -81,9 +81,15 @@ Message
 .. code-block:: json
 
 	{
-		"op": 3,
-		"d": {
-			"idle_since": null,
-			"game_id": null
-		}
+    		"op" : 3,
+		 "d" : {
+        		"game" : {
+            			"name" : "name"
+        		},
+        		"idle_since" null
+    		}
 	}
+
+- changing idle_since to something other than null will show you as idle
+
+- changing game.name to null will remove the playing indicator
