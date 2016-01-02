@@ -97,7 +97,98 @@ Request
 Events
 ------
 
+CHANNEL_CREATE (Public)
+~~~~~~~~~~~~~~
 
+A channel has been created in one of guilds.
+Note: d is in `Channel Format`_.
+
+.. code-block:: json
+
+    {
+        "t": "MESSAGE_CREATE",
+        "s": 1,
+        "op": 0,
+        "d": {...}
+    }
+    
+CHANNEL_CREATE (Private)
+~~~~~~~~~~~~~~
+
+You have got a first private message from person.
+
+.. code-block:: json
+
+    {
+        "t": "MESSAGE_CREATE",
+        "s": 1,
+        "op": 0,
+        "d": {
+            "recipient": {
+                "username": "test user",
+                "id": "1111222233334444555666",
+                "discriminator": "1234",
+                "avatar": "..."
+            },
+            "last_message_id": null,
+            "is_private": true,
+            "id": "11112222333344445555666"
+        }
+    }
+    
+CHANNEL_UPDATE
+~~~~~~~~~~~~~~
+
+Channel details has been updated.
+Note: d is in `Channel Format`_.
+
+.. code-block:: json
+
+    {
+        "t": "CHANNEL_UPDATE",
+        "s": 1,
+        "op": 0,
+        "d": {...}
+    }
+    
+CHANNEL_DELETE (Public)
+~~~~~~~~~~~~~~
+
+Channel has been deleted.
+Note: d is in `Channel Format`_.
+
+.. code-block:: json
+
+    {
+        "t": "CHANNEL_DELETE",
+        "s": 1,
+        "op": 0,
+        "d": {...}
+    }
+    
+CHANNEL_DELETE (Private)
+~~~~~~~~~~~~~~
+
+Private channel has been deleted.
+
+.. code-block:: json
+
+    {
+        "t": "CHANNEL_DELETE",
+        "s": 1,
+        "op": 0,
+        "d": {
+            "recipient": {
+                "username": "test user",
+                "id": "1111222233334444555666",
+                "discriminator": "1234",
+                "avatar": "..."
+            },
+            "last_message_id": null,
+            "is_private": true,
+            "id": "11112222333344445555666"
+        }
+    }
 
 Channel Format
 --------------
