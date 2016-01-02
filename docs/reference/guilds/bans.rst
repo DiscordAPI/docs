@@ -60,3 +60,48 @@ Request
 
 Events
 ------
+
+GUILD_BAN_ADD
+~~~~~~~~~~~~~~
+
+Ban has been added.
+
+.. code-block:: json
+
+    {
+        "t": "GUILD_BAN_ADD",
+        "s": 1,
+        "op": 0,
+        "d": {
+            "user": {
+                "username":"test user",
+                "id":"111222333444555666",
+                "discriminator":"1234",
+                "avatar":null
+            },
+            "guild_id": "111222333444555666"
+        }
+    }
+    
+GUILD_BAN_REMOVE
+~~~~~~~~~~~~~~
+
+Ban has been removed.
+
+.. code-block:: json
+
+    {
+        "t": "GUILD_BAN_REMOVE",
+        "s": 1,
+        "op": 0,
+        "d": {
+            "user": {
+                "username":"test user",
+                "id":"111222333444555666",
+                "discriminator":"1234",
+                "avatar":null
+            },
+            "guild_id": "111222333444555666"
+        }
+    }
+    
