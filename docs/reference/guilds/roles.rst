@@ -106,7 +106,56 @@ Request
 Events
 ------
 
+GUILD_ROLE_CREATE
+~~~~~~~~~~~~~~
 
+Role has been created. Note: role is in `Role Format`_.
+
+.. code-block:: json
+
+    {
+        "t": "GUILD_ROLE_CREATE",
+        "s": 1,
+        "op": 0,
+        "d": {
+            "role": {...},
+            "guild_id": "111222333444555666"
+        }
+    }
+
+GUILD_ROLE_UPDATE
+~~~~~~~~~~~~~~
+
+Role has been updated (permissions has been updated, etc). Note: role is in `Role Format`_.
+
+.. code-block:: json
+
+    {
+        "t": "GUILD_ROLE_UPDATE",
+        "s": 1,
+        "op": 0,
+        "d": {
+            "role": {...},
+            "guild_id": "111222333444555666"
+        }
+    }
+    
+GUILD_ROLE_DELETE
+~~~~~~~~~~~~~~
+
+Role has been deleted.
+
+.. code-block:: json
+
+    {
+        "t": "GUILD_ROLE_DELETE",
+        "s": 1,
+        "op": 0,
+        "d": {
+            "role_id": "111222333444555666",
+            "guild_id": "111222333444555666"
+        }
+    }
 
 Role Format
 -----------
