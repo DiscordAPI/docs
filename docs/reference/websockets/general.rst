@@ -67,15 +67,17 @@ Message (via WebSocket)
 ~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: json
+
 	{
 		"op": 1,
 		"d": "1450996513618"
 	}
+	
 
 Update Status
 -------------
 
-Message
+Message (via WebSocket)
 ~~~~~~~
 
 .. code-block:: json
@@ -84,7 +86,7 @@ Message
     		"op" : 3,
 		 "d" : {
         		"game" : {
-            			"name" : "name"
+            			"name" : "Game name"
         		},
         		"idle_since": null
     		}
