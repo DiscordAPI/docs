@@ -105,7 +105,6 @@ Member has been kicked form the guild.
                 "discriminator":"1234",
                 "avatar":null
             },
-            "roles":[],
             "joined_at":"2016-01-02T16:14:21.451424+00:00",
             "guild_id":"111222333444555666"
         }
