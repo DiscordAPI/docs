@@ -38,3 +38,62 @@ Request
 
 Events
 ------
+
+GUILD_MEMBER_ADD
+~~~~~~~~~~~~~~
+
+Member has joined to the guild. Note: d is in `Member Format`_.
+
+.. code-block:: json
+
+    {
+        "t": "GUILD_MEMBER_ADD",
+        "s": 1,
+        "op": 0,
+        "d": {...}
+    }
+    
+GUILD_MEMBER_UPDATE
+~~~~~~~~~~~~~~
+
+Member get a new role, etc. Note: d is in `Member Format`_.
+
+.. code-block:: json
+
+    {
+        "t": "GUILD_MEMBER_UPDATE",
+        "s": 1,
+        "op": 0,
+        "d": {...}
+    }
+    
+GUILD_MEMBER_REMOVE
+~~~~~~~~~~~~~~
+
+Member has been kicked form the guild. Note: d is in `Member Format`_ but don't have "roles" key.
+
+.. code-block:: json
+
+    {
+        "t": "GUILD_MEMBER_REMOVE",
+        "s": 1,
+        "op": 0,
+        "d": {...}
+    }
+
+Member Format
+-----------
+
+.. code-block:: json
+
+    {
+        "user":{
+            "username":"test user",
+            "id":"111222333444555666",
+            "discriminator":"1234",
+            "avatar":null
+        },
+        "roles":[],
+        "joined_at":"2016-01-02T16:14:21.451424+00:00",
+        "guild_id":"111222333444555666"
+    }

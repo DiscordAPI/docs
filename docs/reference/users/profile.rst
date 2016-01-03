@@ -57,3 +57,30 @@ Example: changing the avatar image
         "password": "password",
         "username": "Something"
     }
+    
+    
+    
+Events
+------
+    
+USER_UPDATE
+~~~~~~~~~~~~~~
+
+User profile has been updated on another machine.
+
+.. code-block:: json
+
+    {
+        "t": "USER_UPDATE",
+        "s": 1,
+        "op": 0,
+        "d": {
+            "verified": true,
+            "username": "Something",
+            "id": "11122233344455566",
+            "email": "email@example.com",
+            "discriminator": "1234",
+            "avatar": "a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1"
+        }
+    }
+
