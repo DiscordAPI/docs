@@ -9,7 +9,7 @@ Request
 
 .. code-block:: http
 
-    POST https://discordapp.com/api/voice/regions
+    GET https://discordapp.com/api/voice/regions
 
 Parameters
 ^^^^^^^^^^
