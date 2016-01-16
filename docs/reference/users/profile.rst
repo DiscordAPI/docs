@@ -28,7 +28,7 @@ Parameters
     - **email** (Required): The user's email (overwrites existing)
     - **password** (Required): The user's current password
     - **new_password** (Optional): The user's desired password
-    - **username** (Required): The user's userame (overwrites existing)
+    - **username** (Required): The user's username (overwrites existing)
 
 Response
 ~~~~~~~~
