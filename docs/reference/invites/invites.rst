@@ -106,6 +106,23 @@ See `Basic Invite Format`_.
 
 
 
+Get Guild Invites
+-------------
+
+Request
+~~~~~~~
+
+.. code-block:: http
+
+    GET https://discordapp.com/api/guilds/:guild_id/invites
+
+Response
+~~~~~~~~
+
+An array of invite objects. See `Basic Invite Format`_.
+
+
+
 Basic Invite Format
 -------------------
 
