@@ -69,7 +69,19 @@ See `Guild Format`_.
 
 
 
-Delete/Leave Guild
+Leave Guild
+------------------
+
+Request
+~~~~~~~
+
+.. code-block:: http
+
+    DELETE https://discordapp.com/api/users/@me/guilds/:id
+
+
+
+Delete Guild
 ------------------
 
 Request
