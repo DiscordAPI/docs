@@ -32,6 +32,37 @@ An array of objects. Below is an example of a response with one location. There 
 
 
 
+Move Member
+-----------
+
+Request
+~~~~~~~
+
+.. code-block:: http
+
+	PATCH https://discordapp.com/api/guilds/:guild_id/members/:member_id
+
+.. code-block:: json
+
+	{
+		"channel_id": "111222333444555666"
+	}
+
+Parameters
+^^^^^^^^^^
+
+	- **channel_id** (Required): ID of the channel to move the member to.
+
+Response
+~~~~~~~~
+
+.. code-block:: json
+
+    {
+    }
+
+
+
 ???
 ---
 
