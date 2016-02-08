@@ -59,33 +59,7 @@ Parameters
 Response
 ~~~~~~~~
 
-.. code-block:: json
-
-    {
-        "max_age": 86400,
-        "code": "0cFbBdvaQwLBiyyI",
-        "guild": {
-            "id": "110451980584914944",
-            "name": "Guild Name"
-        },
-        "revoked": false,
-        "created_at": "2015-11-01T19:23:29.137000+00:00",
-        "temporary": false,
-        "uses": 0,
-        "max_uses": 0,
-        "inviter": {
-            "username": "Person",
-            "discriminator": "1849",
-            "id": "112462135683509820",
-            "avatar": null
-        },
-        "xkcdpass": null,
-        "channel": {
-            "type": "text",
-            "id": "110453227215937536",
-            "name": "Channel Name"
-        }
-    }
+See `Rich Invite Format`_.
 
 
 
@@ -107,7 +81,7 @@ See `Basic Invite Format`_.
 
 
 Get Guild Invites
--------------
+-----------------
 
 Request
 ~~~~~~~
@@ -119,7 +93,24 @@ Request
 Response
 ~~~~~~~~
 
-An array of invite objects. See `Basic Invite Format`_.
+An array of invite objects. See `Rich Invite Format`_.
+
+
+
+Get Channel Invites
+-----------------
+
+Request
+~~~~~~~
+
+.. code-block:: http
+
+    GET https://discordapp.com/api/channels/:channel_id/invites
+
+Response
+~~~~~~~~
+
+An array of invite objects. See `Rich Invite Format`_.
 
 
 
@@ -133,6 +124,37 @@ Basic Invite Format
         "guild": {
             "id": "110451980584914944",
             "name": "Guild Name"
+        },
+        "xkcdpass": null,
+        "channel": {
+            "type": "text",
+            "id": "110453227215937536",
+            "name": "Channel Name"
+        }
+    }
+
+Rich Invite Format
+------------------
+
+.. code-block:: json
+
+    {
+        "max_age": 86400,
+        "code": "0cFbBdvaQwLBiyyI",
+        "guild": {
+            "id": "110451980584914944",
+            "name": "Guild Name"
+        },
+        "revoked": false,
+        "created_at": "2015-11-01T19:23:29.137000+00:00",
+        "temporary": false,
+        "uses": 0,
+        "max_uses": 0,
+        "inviter": {
+            "username": "Person",
+            "discriminator": "1849",
+            "id": "112462135683509820",
+            "avatar": null
         },
         "xkcdpass": null,
         "channel": {
