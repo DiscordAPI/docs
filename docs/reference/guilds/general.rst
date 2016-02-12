@@ -23,7 +23,7 @@ Parameters
 ^^^^^^^^^^
 
     - **name** (Required): The name of the guild to create. Name must be 2-100 characters long
-    - **region** (Optional): Region name received by `voice/regions <https://github.com/DiscordAPI/docs/blob/master/docs/reference/voice/general.rst#get-server-regions>`_ (Default: us-west)
+    - **region** (Required): Region name received by `voice/regions <https://github.com/DiscordAPI/docs/blob/master/docs/reference/voice/general.rst#get-server-regions>`_ (Example: us-west)
     - **icon** (Optional): Icon image 128x128px in format like: data:image/jpg;base64,dGVzdDEy ... (Set null if don't needed)
     
 Response
