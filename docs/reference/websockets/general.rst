@@ -55,7 +55,7 @@ Message (via WebSocket)
 		}
 	}
 
-Note: Only d.token, d.v and d.properties.* are required
+Note: Only d.token, d.v, d.large_threshold and d.properties.* are required
 
 
 Keepalive
