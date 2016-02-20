@@ -18,7 +18,7 @@ READY Event
                 "render_embeds": true,
                 "muted_channels": [],
                 "message_display_compact": false,
-                "locale": "en",
+                "locale": "en-US",
                 "inline_embed_media": true,
                 "inline_attachment_media": true,
                 "enable_tts_command": true,
@@ -102,6 +102,7 @@ READY Event
                     ],
                     "owner_id": "11122233344455566",
                     "name": "Example Server",
+                    "member_count": 1,
                     "members": [
                         {
                             "user": {
@@ -171,7 +172,7 @@ READY Event
             ]
         }
     }
-    
+
 Keys
 ^^^^^^^^^^
 
@@ -180,14 +181,12 @@ Keys
     - **user**: Information about the current user.
     - **session_id**: Current session id.
     - **read_state**: Array of channels read states in format:
-    
         - **mention_count**: Count of mentions for the current user.
         - **last_message_id**: ID of the last message.
         - **id**: Channel ID.
     - **private_channels**: Array of private channels.
     - **heartbeat_interval**: Interval for `keepalive <https://github.com/DiscordAPI/docs/blob/master/docs/reference/websockets/general.rst#keepalive>`_.
     - **guilds**: Array of current guilds in `Guild Format <https://github.com/DiscordAPI/docs/blob/master/docs/reference/guilds/general.rst#guild-format>`_ with additional keys:
-    
         - **voice_states**: Array of members voice states.
         - **presences**: Array of memebers statuses.
         - **members**: Array of guild members.

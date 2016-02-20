@@ -93,3 +93,16 @@ YouTube Gaming Format
 	{
 
 	}
+
+Emoji Format
+------------
+
+.. code-block:: json
+
+	{
+		"roles": [ "111222333444555666" ],
+		"require_colons": false,
+		"name": "Kappa",
+		"managed": true,
+		"id": "123456789101112131"
+	}
