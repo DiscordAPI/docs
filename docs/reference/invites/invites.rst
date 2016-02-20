@@ -156,7 +156,7 @@ Rich Invite Format
             "id": "112462135683509820",
             "avatar": null
         },
-        "xkcdpass": null,
+        "xkcdpass": "optional-xkcd-pass",
         "channel": {
             "type": "text",
             "id": "110453227215937536",

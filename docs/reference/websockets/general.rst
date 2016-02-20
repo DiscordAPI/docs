@@ -21,7 +21,7 @@ Response
 .. code-block:: json
 
     {
-    	"url":"wss://gateway-cerberus.discord.gg"
+    	"url":"wss://gateway-1.discord.gg/4"
     }
 
 The URL shown here is a common example of one. It's best to always use the URL you receive from your GET request instead of statically connecting to the URL here.
@@ -72,7 +72,7 @@ Message (via WebSocket)
 		"op": 1,
 		"d": "1450996513618"
 	}
-	
+
 
 Update Status
 -------------
@@ -84,7 +84,7 @@ Message (via WebSocket)
 
 	{
     		"op" : 3,
-		 "d" : {
+		 	"d" : {
         		"game" : {
             			"name" : "Game name"
         		},

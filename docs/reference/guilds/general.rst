@@ -25,7 +25,7 @@ Parameters
     - **name** (Required): The name of the guild to create. Name must be 2-100 characters long
     - **region** (Required): Region name received by `voice/regions <https://github.com/DiscordAPI/docs/blob/master/docs/reference/voice/general.rst#get-server-regions>`_ (Example: us-west)
     - **icon** (Optional): Icon image 128x128px in format like: data:image/jpg;base64,dGVzdDEy ... (Set null if don't needed)
-    
+
 Response
 ~~~~~~~~
 
@@ -134,7 +134,7 @@ An array of channel objects. See `Channel format <../channels/general.rst#channe
 
 Events
 ------
-    
+
 GUILD_CREATE
 ~~~~~~~~~~~~~~
 
@@ -165,7 +165,7 @@ Note: d is in `Guild Format`_.
         "op": 0,
         "d": {...}
     }
-    
+
 
 GUILD_DELETE
 ~~~~~~~~~~~~~~
@@ -181,7 +181,48 @@ Note: d is in `Guild Format`_.
         "op": 0,
         "d": {...}
     }
-    
+
+GUILD_INTEGRATIONS_UPDATE
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The third party integrations for the guild have updated.
+
+.. code-block:: json
+
+	{
+		"t": "GUILD_INTEGRATIONS_UPDATE",
+		"s": 1,
+		"op": 0,
+		"d": {
+			"guild_id": "111222333444555666"
+		}
+	}
+
+GUILD_EMOJIS_UPDATE
+~~~~~~~~~~~~~~~~~~~
+
+The emojis for the guild have updated.
+
+.. code-block:: json
+
+	{
+		"t": "GUILD_EMOJIS_UPDATE"i
+		"s": 1,
+		"op": 0,
+		"d": {
+			"guild_id": "111222333444555666",
+			"emojis": [
+				{
+					"roles": [ "111222333444555666" ],
+					"require_colons": false,
+					"name": "OpieOP",
+					"managed": true,
+					"id": "111222333444555666"
+				}
+			]
+		}
+	}
+
 
 Guild Format
 --------------
@@ -189,7 +230,7 @@ Guild Format
 .. code-block:: json
 
     {
-        "features": [],
+        "features": ["INVITE_SPLASH"],
         "afk_timeout": 300,
         "joined_at": "2012-12-21T12:34:56.789012+00:00",
         "afk_channel_id": null,
@@ -212,5 +253,6 @@ Guild Format
         "embed_enabled": false,
         "splash": null,
         "emojis": [],
-        "owner_id": "111222333444555666"
+        "owner_id": "111222333444555666",
+        "member_count": 3
     }
