@@ -1,6 +1,8 @@
 # docs
 The Unofficial Discord Documentation
 
+If you're just looking to read, [the compiled version is a lot easier on the eyes](http://unofficial.discordapi.com/en/latest/).
+
 ### Contributing
 
 You want to contribute? Great!
