@@ -1,5 +1,7 @@
 # docs
-The Unofficial Discord Documentation
+### The Unofficial Discord Documentation
+
+#### [Official docs are now out!](https://discordapp.com/developers/docs/intro)
 
 If you're just looking to read, [the compiled version is a lot easier on the eyes](http://unofficial.discordapi.com/en/latest/).
 
