@@ -3,6 +3,8 @@ Discord API
 
 Unofficial Discord API Documentation
 
+`Official docs are now out! <https://discordapp.com/developers/docs/intro>`_
+
 .. toctree::
    :caption: Documentation
    :maxdepth: 2
